@@ -3,13 +3,13 @@
 ### 小程序
 * [小程序小笔记](https://github.com/zxpsuper/note/blob/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%94%E8%AE%B0.md)
 
-### VUE
-* [VUE小笔记](https://github.com/zxpsuper/note/blob/master/vue/vue%E5%B0%8F%E7%AC%94%E8%AE%B0.md)
+### vue
+* [vue小笔记](https://github.com/zxpsuper/note/blob/master/vue/vue%E5%B0%8F%E7%AC%94%E8%AE%B0.md)
 
-### REACT
+### react
 * [react笔记](https://github.com/zxpsuper/note/blob/master/react/react%E7%AC%94%E8%AE%B0.md)
 
-### JAVASCRIPT
+### Javascript
 * [JS](https://github.com/zxpsuper/note/blob/master/vue/vue%E5%B0%8F%E7%AC%94%E8%AE%B0.md)
 
 
