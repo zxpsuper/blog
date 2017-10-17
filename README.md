@@ -12,6 +12,9 @@
 ### Javascript
 * [JS](https://github.com/zxpsuper/note/blob/master/vue/vue%E5%B0%8F%E7%AC%94%E8%AE%B0.md)
 
+### Javascript
+* [JS](/vue/vue%E5%B0%8F%E7%AC%94%E8%AE%B0.md)
+
 
 如果你想了解我更多可以关注我的 [简书](http://www.jianshu.com/u/ef4f2ba10608)
 
