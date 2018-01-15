@@ -23,6 +23,7 @@ create-react-app my-app
 cd my-app
 npm start
 
+npm run eject 可以显示被隐藏的webpack
 
 4. JSX 在嵌套时，最外层有且只能有一个标签，否则就会出错袄：
 ```
