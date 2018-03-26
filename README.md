@@ -3,10 +3,10 @@
 ### 小程序
 * [小程序小笔记](https://github.com/zxpsuper/note/blob/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%94%E8%AE%B0.md)
 
-### vue
+### Vue
 * [vue小笔记](https://github.com/zxpsuper/note/blob/master/vue/vue%E5%B0%8F%E7%AC%94%E8%AE%B0.md)
 
-### react
+### React
 * [react笔记](https://github.com/zxpsuper/note/blob/master/react/react%E7%AC%94%E8%AE%B0.md)
 
 ### Javascript
@@ -16,7 +16,7 @@
 * [时间转换](https://github.com/zxpsuper/note/blob/master/js/%E6%97%B6%E9%97%B4%E8%BD%AC%E6%8D%A2.md)
 * [正则表达式](https://github.com/zxpsuper/note/blob/master/js/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)
 
-### es6
+### ES6
 * [class](https://github.com/zxpsuper/note/blob/master/es6/class.md)
 * [Generator 函数](https://github.com/zxpsuper/note/blob/master/es6/generator%E5%87%BD%E6%95%B0.md)
 * [let 与 const](https://github.com/zxpsuper/note/blob/master/es6/let%20%E4%B8%8E%20const.md)
