@@ -226,4 +226,53 @@ for (var i = array.length - 1; i >= 0; i--) {
 console.timeEnd('Array initialize');
 // Array initialize: 1914.481ms
 ```
-37. 
+
+37. Object.assign()
+
+Object.assign() 方法用于将所有可枚举的属性的值从一个或多个源对象复制到目标对象。它将返回目标对象。
+
+语法——Object.assign(target, ...sources)
+
+如果目标对象中的属性具有相同的键，则属性将被源中的属性覆盖。后来的源的属性将类似地覆盖早先的属性。注意，Object.assign 会跳过那些值为 null 或 undefined 的源对象。
+
+针对深度拷贝，需要使用其他方法，因为 Object.assign() 拷贝的是属性值。假如源对象的属性值是一个指向对象的引用，它也只拷贝那个引用值。
+
+```
+var o1 = { a: 1 };
+var o2 = { b: 2 };
+var o3 = { c: 3 };
+
+var obj = Object.assign(o1, o2, o3);
+console.log(obj);  // { a: 1, b: 2, c: 3 }
+console.log(o1);  // { a: 1, b: 2, c: 3 }, 注意目标对象自身也会改变。
+```
+
+38. reduce 方法 (Array)
+
+对数组中的所有元素调用指定的回调函数。该回调函数的返回值为累积结果，并且此返回值在下一次调用该回调函数时作为参数提供。
+直白的说就是将一个多维的数组合并为少一维的新数组。
+
+39.  import * as apis from '../apis'
+使用这样的语法可以直接使用 ‘apis.方法名’引用方法
+
+40. += 比如 x+ = y，相当于x = x + y
+
+41. encodeURIComponent() 函数可把字符串作为 URI 组件进行编码
+
+42. substring() 方法用于提取字符串中介于两个指定下标之间的字符。stringObject.substring(start,stop)
+
+43. 如何获取对象长度
+```
+var obj = {"c1":1,"c2":2};
+var arr = Object.keys(obj);
+var len = arr.length;
+console.log(len);//结果为2 
+
+```
+44. 浏览器打开窗口方式
+```
+// 打开当前页面
+window.location.href = 'http://and.thaihall.com'
+//打开新窗口
+window.open('https://and.thaihall.com')
+```

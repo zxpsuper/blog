@@ -61,14 +61,16 @@ Server:Apache Tomcat/5.0.12
 Date:Mon,6Oct2003 13:23:42 GMT
 Content-Length:112
 
-`<html>
+```
+<html>
 <head>
-<title>HTTP响应示例<title>
+  <title>HTTP响应示例<title>
 </head>
 <body>
-Hello HTTP!
+  Hello HTTP!
 </body>
-</html>`
+</html>
+```
 
 协议状态代码描述HTTP响应的第一行类似于HTTP请求的第一行，它表示通信所用的协议是HTTP1.1服务器已经成功的处理了客户端发出的请求（200表示成功）:
 HTTP/1.1 200 OK
