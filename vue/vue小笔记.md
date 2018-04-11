@@ -318,5 +318,3 @@ watch: {
 + 如果是新增了功能，但是向下兼容，需要更新Y位。
 
 + 如果有大变动，向下不兼容，需要更新X位。
-
-39. vue watch 监听父组件传来的参数 props，当参数为 Array 或者 Object时，子组件 watch 生命周期能监听到 newval。当传递的值为Number 或 String 时，无法 watch 到该 props 的变化。

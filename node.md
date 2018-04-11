@@ -19,6 +19,7 @@
 
 NodeJS最精华的异步IO模型在fs模块里有着充分的体现，例如上边提到的这些API都通过回调函数传递结果。以fs.readFile为例：
 
+```
 fs.readFile(pathname, function (err, data) {
     if (err) {
         // Deal with error.
@@ -26,6 +27,7 @@ fs.readFile(pathname, function (err, data) {
         // Deal with data.
     }
 });
+```
 
 如上边代码所示，基本上所有fs模块API的回调参数都有两个。第一个参数在有错误发生时等于异常对象，第二个参数始终用于返回API方法执行结果。
 
