@@ -1,4 +1,9 @@
-var obj = {"c1":1,"c2":2};
-var arr = Object.keys(obj);
-var len = arr.length;
-console.log(len);//结果为2
+function* haha(){
+  yield console.log('hello');
+  yield console.log('world');
+  console.log('ending'); 
+}
+let t = haha()
+// t.next()
+// t.next()
+// t.next()
