@@ -96,3 +96,5 @@ word-break: break-all;
 主要属性：阴影，：active位置偏移。如top:5px;
 
 17. box-sizing:border-box  使用该类的盒子并排显示，宽度高度包含padding
+
+18. 绝对定位是相对于元素最近的已定位的祖先元素（即是设置了绝对定位或者相对定位h的祖先元素）
