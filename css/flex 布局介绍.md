@@ -1,5 +1,6 @@
 ### **Flex布局介绍**
-============
+
+---------------------------------------------------------------
 
 Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性
 
@@ -64,8 +65,6 @@ align-content属性定义了多根轴线的对齐方式。如果项目只有一�
                （请对照 align-items属性）
 }
 ```
-![这里写图片描述](http://img.blog.csdn.net/20170814155612981?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzM4Nzg4MzQ3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-
 子属性 （作用于子级div等元素）
 -----------------
 
@@ -96,5 +95,3 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 }
 ```
 该属性可能取6个值，除了auto，其他都与align-items属性完全一致。
-![mua](http://img.blog.csdn.net/20170814155657775?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzM4Nzg4MzQ3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-

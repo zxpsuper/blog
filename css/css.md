@@ -2,7 +2,7 @@
 
 2. 箭头的画法——两个三角形合成，一个覆盖另一个。
 
-3. 首元素设置margin-top无效(有时候)
+3. 父子元素设置margin-top以值大为准，且子元素无margin-top
 
 4. 设置placeholder样式的方法
 
