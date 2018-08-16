@@ -1,49 +1,9 @@
-const arr = [];
-
-// 生成随机整数
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-// 生成len长度的随机数组
-function generateArr(len) {
-  for (var i = 0; i < len; i++) {
-    arr.push(random(1, len));
-  }
-}
-
-// 统计占用了多少空间
-let sum = 0;
-
-var quickSort = function(arr) {
-  if (arr.length <= 1) {
-    return arr;
-  }
-
-  var pivotIndex = Math.floor(arr.length / 2);
-
-  var pivot = arr.splice(pivotIndex, 1)[0];
-
-  var left = [];
-
-  var right = [];
-
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] < pivot) {
-      left.push(arr[i]);
-    } else {
-      right.push(arr[i]);
-    }
-  }
-  sum = right.length + left.length + sum;
-  return quickSort(left).concat([pivot], quickSort(right));
-};
-// 生成十万个成员的数组
-generateArr(100000);
-
-// 将数组反向排序,目的是使得接下来的快排达到最差情况,也就是O(n㏒n)的复杂度
-arr.sort((a, b) => b - a);
-
-quickSort(arr);
-
-console.log(sum); // 1481308 近150万
+var arr1 = "john".split('');
+console.log(arr1)
+var arr2 = arr1.reverse();
+var arr3 = "jones".split('');
+arr2.push(arr3);
+console.log(arr1)
+console.log(arr2)
+console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
