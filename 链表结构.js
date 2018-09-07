@@ -54,3 +54,4 @@ var fruits = new linkTable();
 fruits.insert("Apple", "head");
 fruits.insert("Banana", "Apple");
 fruits.insert("Pear", "Banana");
+console.log(fruits)
