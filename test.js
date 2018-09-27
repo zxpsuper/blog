@@ -1,10 +1,24 @@
-const obj = {a: 1, b: 2, c: 3};
-let ss = Object.keys(obj)
-let tt =Object.entries(obj)
-const vals=Object.keys(obj).map(key=>obj[key]);
-// vals.a = 2
-console.log(ss)
-console.log(tt)
+function debounce(func, wait) {
+  var timeout;
 
-console.log(obj)
-console.log(vals)
+  return function () {
+      console.log(timeout)
+      var context = this;
+      var args = arguments;
+
+      if (timeout) clearTimeout(timeout);
+      
+      timeout = setTimeout(function(){
+          func.apply(context, args)
+      }, wait);
+  }
+}
+var num = 1;
+function count() {
+  num++;
+  console.log(num)
+};
+
+debounce(count(), 1000)
+debounce(count(), 1000)
+debounce(count(), 1000)

@@ -23,10 +23,6 @@
 * [解构赋值](https://github.com/zxpsuper/note/blob/master/es6/%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC.md)
 * [javascript中apply、call和bind的区别](https://github.com/zxpsuper/note/blob/master/es6/javascript%E4%B8%ADapply%E3%80%81call%E5%92%8Cbind%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 
-### CSS
-* [CSS3 兼容性处理](https://github.com/zxpsuper/note/blob/master/css/CSS3%20%E5%85%BC%E5%AE%B9%E6%80%A7%E5%A4%84%E7%90%86.md)
-* [Flex布局介绍](https://github.com/zxpsuper/note/blob/master/css/flex%20%E5%B8%83%E5%B1%80%E4%BB%8B%E7%BB%8D.md)
-
 ### 前端杂知识
 * [HTTP请求详解](https://github.com/zxpsuper/note/blob/master/HTTP%E8%AF%B7%E6%B1%82%E8%AF%A6%E8%A7%A3.md)
 

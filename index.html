@@ -7,68 +7,38 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<style>
-		/* 公共代码 */
-		.wp {
-			border: 1px solid red;
-			width: 300px;
-			height: 300px;
-		}
-
-		.box {
-			background: green;
-		}
-
-		.box.size {
-			width: 120px;
-			height: 120px;
-		}
-
-		/* 公共代码 */
-		/* 此处引用上面的公共代码 */
-		/* 此处引用上面的公共代码 */
-
-		/* 定位代码 */
-		.wp {
-			position: relative;
-		}
-
-		.box {
-			position: absolute;
-			;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin: auto;
-		}
 	</style>
 </head>
 
 <body>
-	<div class="wp">
-		<div class="box size">123123</div>
-	</div>
+	<div id="content" style="height:150px;line-height:150px;text-align:center; color: #fff;background-color:#ccc;font-size:80px;"></div>
 	<script>
-		/**
-		 * @param {number} num
-		 * @return {string}
-		 */
-	var intToRoman = function (num) {
-		let result = ''
-		const intArr = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
-		const RomanArr = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
+		function debounce(func, wait) {
+			var timeout;
 
-		for (let i = 0; i < intArr.length; i++) {
-			while (num % intArr[i] < num) {
-				result += RomanArr[i]
-				num -= intArr[i]
+			return function () {
+				var context = this;
+				var args = arguments;
+				console.log(args)
+				console.log(func)
+				if (timeout) clearTimeout(timeout);
+
+				timeout = setTimeout(function () {
+					func.apply(context, args)
+				}, wait);
 			}
 		}
 
-		return result
-	}
-	console.log(intToRoman(8))
+		var num = 1;
+		var content = document.getElementById('content');
+
+		function count() {
+			content.innerHTML = num++;
+		};
+
+		content.onmousemove = debounce(count,1000);;
 	</script>
+
 </body>
 
 </html>
