@@ -35,7 +35,7 @@ function deepClone(data){
 
 function deepClone(origin, target) {
  
-	var target = target || {};
+	var target = target || {},
 	toStr = Object.prototype.toString;
 	for(var prop in origin ){
 		if(origin.hasOwnProperty(prop)){	//不能把原型链上的一起拷贝了
