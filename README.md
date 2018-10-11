@@ -27,9 +27,9 @@
 * [HTTP请求详解](https://github.com/zxpsuper/note/blob/master/HTTP%E8%AF%B7%E6%B1%82%E8%AF%A6%E8%A7%A3.md)
 
 ---------------------------------------------------------------------------------------------------------------------------------
-如果你想了解我更多可以关注我的 [简书](http://www.jianshu.com/u/ef4f2ba10608)
 
-也可以关注我的微信公众号'suporka'
+
+我的微信公众号'suporka'
 
 
 ![小皮咖](https://raw.githubusercontent.com/zxpsuper/picture/master/suporka.jpg)
