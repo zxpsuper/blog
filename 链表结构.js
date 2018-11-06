@@ -1,3 +1,10 @@
+/*
+ * @Author: mikey.zhaopeng 
+ * @Date: 2018-11-06 11:36:03 
+ * @Last Modified by:   mikey.zhaopeng 
+ * @Last Modified time: 2018-11-06 11:36:03 
+ */
+
 class Node {
   constructor(element) {
     this.element = element; //当前节点的元素
