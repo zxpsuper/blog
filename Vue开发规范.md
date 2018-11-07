@@ -1,6 +1,18 @@
 # Vue 开发规范
 
-## 1. 命名
+## 目录
+
+- [命名](#name)
+- [Props](#props)
+- [Data](#data)
+- [Template](#template)
+- [Style](#style)
+- [Filter](#filter)
+- [注释](#zhushi)
+- [Ajax](#ajax)
+- [其他](#other)
+
+## 1. <a id="name">命名</a>
 
 - 组件名应该始终是多个单词的，根组件 App 除外。
 
@@ -54,7 +66,7 @@ components/
 |- SettingsCheckboxTerms.vue
 ```
 
-## 2.props
+## 2. <a id="props">Props</a>
 
 - prop 的定义应该尽量详细，至少需要指定其类型。
 
@@ -92,7 +104,7 @@ props: {
 <WelcomeMessage greeting-text="hi" />;
 ```
 
-## 3. data
+## 3. <a id="data">data</a>
 
 - 组件的 data 必须是一个函数。
 
@@ -118,7 +130,17 @@ new Vue({
 });
 ```
 
-## 4. template
+- data return 的属性有必要增加注释说明
+
+```js
+data() {
+  return {
+    iconSwitch: false // icon开关
+  }
+}
+```
+
+## 4. <a id="template">template</a>
 
 - 为 v-for 设置键值 key
   能解决一些极端情况下出现的异常，也便于 diff 算法以最少的 dom 操作更新视图。不建议用 index, 建议用数据中的 id.
@@ -207,7 +229,7 @@ new Vue({
 <style>/* ... */</style>
 ```
 
-## 5. style
+## 5. <a id="style">style</a>
 
 - 为组件样式设置作用域
   对于应用来说，顶级 App 组件和布局组件中的样式可以是全局的，但是其它所有组件都应该是有作用域的。加入 score 可以避免样式污染问题
@@ -226,10 +248,39 @@ new Vue({
 </style>
 ```
 
-## 6. script
+## 6. <a id="filter">filter</a>
+
+- filter 应在全局的 filter.js 中注册，用于处理页面数据
+
+```js
+{
+  {
+    list.time | formatTime;
+  }
+}
+```
+
+## 7. <a id="zhushi">注释</a>
+
+- 公共组件使用说明
+- 各组件中重要函数或者类说明
+- 复杂的业务逻辑处理说明
+- 特殊情况的代码处理说明,对于代码中特殊用途的变量、存在临界值、函数中使用的 hack、使用了某种算法或思路等需要进行注释描述
+- 注释块必须以/**（至少两个星号）开头**/；
+- 单行注释使用//；
+
+## 8. <a id="ajax">ajax</a>
+
+- 关于接口的文件应置于 api 文件夹下，ajax 挂载在 main.js 里.
+
+```js
+Vue.prototype.$ajax = axios;
+```
+
+## <a id="other">其他</a>
 
 - vue 方法放置顺序
 
 name - component - props - data - computed - watch - created -
 
-mounted - activited - update - methods - destoryed
+mounted - activited - updated - methods - destoryed
