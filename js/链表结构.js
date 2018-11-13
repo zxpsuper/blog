@@ -1,8 +1,8 @@
 /*
- * @Author: mikey.zhaopeng 
- * @Date: 2018-11-06 11:36:03 
- * @Last Modified by:   mikey.zhaopeng 
- * @Last Modified time: 2018-11-06 11:36:03 
+ * @Author: mikey.zhaopeng
+ * @Date: 2018-11-06 11:36:03
+ * @Last Modified by: super
+ * @Last Modified time: 2018-11-12 14:31:26
  */
 
 class Node {
@@ -61,4 +61,4 @@ var fruits = new linkTable();
 fruits.insert("Apple", "head");
 fruits.insert("Banana", "Apple");
 fruits.insert("Pear", "Banana");
-console.log(fruits)
+console.log(fruits);

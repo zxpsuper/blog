@@ -1,0 +1,1005 @@
+/* Css Reset Begin */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+input {
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Link */
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Full Boby */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: "Source Han Sans SC", "思源黑体", "Source Han Sans CN",
+    "思源黑体 CN", "Noto Sans CJK SC", "SimHei", "苹方", "PingFang SC";
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+}
+
+/* Mobile */
+::-webkit-scrollbar {
+  width: 0;
+}
+/* all set to ie box-model */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Css Reset End */
+
+/* 文本系列 */
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* 文字过多三点隐藏显示，需定宽 */
+.no-wrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 文字过多两行三点隐藏显示，需定宽 */
+.no-wrap2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+/* 行内元素对齐系列 */
+.span-top {
+  vertical-align: top !important;
+}
+.span-middle {
+  vertical-align: middle !important;
+}
+.span-bottom {
+  vertical-align: bottom !important;
+}
+
+/* 浮动系列 */
+
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*清除浮动*/
+.clear-float:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.clear-float {
+  zoom: 1;
+}
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.dis-block {
+  display: block;
+}
+.dis-inline {
+  display: inline;
+}
+.dis-inline-block {
+  display: inline-block;
+}
+/* flex 布局系列 */
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.x-center {
+  justify-content: center;
+}
+.y-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+
+/* margin */
+.mt-2 {
+  margin-top: 2px !important;
+}
+.mt-4 {
+  margin-top: 4px !important;
+}
+.mt-6 {
+  margin-top: 6px !important;
+}
+.mt-8 {
+  margin-top: 8px !important;
+}
+.mt-10 {
+  margin-top: 10px !important;
+}
+.mt-12 {
+  margin-top: 12px !important;
+}
+.mt-14 {
+  margin-top: 14px !important;
+}
+.mt-16 {
+  margin-top: 16px !important;
+}
+.mt-18 {
+  margin-top: 18px !important;
+}
+.mt-20 {
+  margin-top: 20px !important;
+}
+.mt-22 {
+  margin-top: 22px !important;
+}
+.mt-24 {
+  margin-top: 24px !important;
+}
+.mt-26 {
+  margin-top: 26px !important;
+}
+.mt-28 {
+  margin-top: 28px !important;
+}
+.mt-30 {
+  margin-top: 30px !important;
+}
+.mt-32 {
+  margin-top: 32px !important;
+}
+.mt-34 {
+  margin-top: 34px !important;
+}
+.mt-36 {
+  margin-top: 36px !important;
+}
+.mt-38 {
+  margin-top: 38px !important;
+}
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mr-2 {
+  margin-right: 2px !important;
+}
+.mr-4 {
+  margin-right: 4px !important;
+}
+.mr-6 {
+  margin-right: 6px !important;
+}
+.mr-8 {
+  margin-right: 8px !important;
+}
+.mr-10 {
+  margin-right: 10px !important;
+}
+.mr-12 {
+  margin-right: 12px !important;
+}
+.mr-14 {
+  margin-right: 14px !important;
+}
+.mr-16 {
+  margin-right: 16px !important;
+}
+.mr-18 {
+  margin-right: 18px !important;
+}
+.mr-20 {
+  margin-right: 20px !important;
+}
+.mr-22 {
+  margin-right: 22px !important;
+}
+.mr-24 {
+  margin-right: 24px !important;
+}
+.mr-26 {
+  margin-right: 26px !important;
+}
+.mr-28 {
+  margin-right: 28px !important;
+}
+.mr-30 {
+  margin-right: 30px !important;
+}
+.mr-32 {
+  margin-right: 32px !important;
+}
+.mr-34 {
+  margin-right: 34px !important;
+}
+.mr-36 {
+  margin-right: 36px !important;
+}
+.mr-38 {
+  margin-right: 38px !important;
+}
+.mr-40 {
+  margin-right: 40px !important;
+}
+
+.mb-2 {
+  margin-bottom: 2px !important;
+}
+.mb-4 {
+  margin-bottom: 4px !important;
+}
+.mb-6 {
+  margin-bottom: 6px !important;
+}
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.mb-12 {
+  margin-bottom: 12px !important;
+}
+.mb-14 {
+  margin-bottom: 14px !important;
+}
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+.mb-18 {
+  margin-bottom: 18px !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mb-22 {
+  margin-bottom: 22px !important;
+}
+.mb-24 {
+  margin-bottom: 24px !important;
+}
+.mb-26 {
+  margin-bottom: 26px !important;
+}
+.mb-28 {
+  margin-bottom: 28px !important;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+.mb-34 {
+  margin-bottom: 34px !important;
+}
+.mb-36 {
+  margin-bottom: 36px !important;
+}
+.mb-38 {
+  margin-bottom: 38px !important;
+}
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.ml-2 {
+  margin-left: 2px !important;
+}
+.ml-4 {
+  margin-left: 4px !important;
+}
+.ml-6 {
+  margin-left: 6px !important;
+}
+.ml-8 {
+  margin-left: 8px !important;
+}
+.ml-10 {
+  margin-left: 10px !important;
+}
+.ml-12 {
+  margin-left: 12px !important;
+}
+.ml-14 {
+  margin-left: 14px !important;
+}
+.ml-16 {
+  margin-left: 16px !important;
+}
+.ml-18 {
+  margin-left: 18px !important;
+}
+.ml-20 {
+  margin-left: 20px !important;
+}
+.ml-22 {
+  margin-left: 22px !important;
+}
+.ml-24 {
+  margin-left: 24px !important;
+}
+.ml-26 {
+  margin-left: 26px !important;
+}
+.ml-28 {
+  margin-left: 28px !important;
+}
+.ml-30 {
+  margin-left: 30px !important;
+}
+.ml-32 {
+  margin-left: 32px !important;
+}
+.ml-34 {
+  margin-left: 34px !important;
+}
+.ml-36 {
+  margin-left: 36px !important;
+}
+.ml-38 {
+  margin-left: 38px !important;
+}
+.ml-40 {
+  margin-left: 40px !important;
+}
+
+/* padding */
+.pt-2 {
+  padding-top: 2px !important;
+}
+.pt-4 {
+  padding-top: 4px !important;
+}
+.pt-6 {
+  padding-top: 6px !important;
+}
+.pt-8 {
+  padding-top: 8px !important;
+}
+.pt-10 {
+  padding-top: 10px !important;
+}
+.pt-12 {
+  padding-top: 12px !important;
+}
+.pt-14 {
+  padding-top: 14px !important;
+}
+.pt-16 {
+  padding-top: 16px !important;
+}
+.pt-18 {
+  padding-top: 18px !important;
+}
+.pt-20 {
+  padding-top: 20px !important;
+}
+.pt-22 {
+  padding-top: 22px !important;
+}
+.pt-24 {
+  padding-top: 24px !important;
+}
+.pt-26 {
+  padding-top: 26px !important;
+}
+.pt-28 {
+  padding-top: 28px !important;
+}
+.pt-30 {
+  padding-top: 30px !important;
+}
+.pt-32 {
+  padding-top: 32px !important;
+}
+.pt-34 {
+  padding-top: 34px !important;
+}
+.pt-36 {
+  padding-top: 36px !important;
+}
+.pt-38 {
+  padding-top: 38px !important;
+}
+.pt-40 {
+  padding-top: 40px !important;
+}
+
+.pr-2 {
+  padding-right: 2px !important;
+}
+.pr-4 {
+  padding-right: 4px !important;
+}
+.pr-6 {
+  padding-right: 6px !important;
+}
+.pr-8 {
+  padding-right: 8px !important;
+}
+.pr-10 {
+  padding-right: 10px !important;
+}
+.pr-12 {
+  padding-right: 12px !important;
+}
+.pr-14 {
+  padding-right: 14px !important;
+}
+.pr-16 {
+  padding-right: 16px !important;
+}
+.pr-18 {
+  padding-right: 18px !important;
+}
+.pr-20 {
+  padding-right: 20px !important;
+}
+.pr-22 {
+  padding-right: 22px !important;
+}
+.pr-24 {
+  padding-right: 24px !important;
+}
+.pr-26 {
+  padding-right: 26px !important;
+}
+.pr-28 {
+  padding-right: 28px !important;
+}
+.pr-30 {
+  padding-right: 30px !important;
+}
+.pr-32 {
+  padding-right: 32px !important;
+}
+.pr-34 {
+  padding-right: 34px !important;
+}
+.pr-36 {
+  padding-right: 36px !important;
+}
+.pr-38 {
+  padding-right: 38px !important;
+}
+.pr-40 {
+  padding-right: 40px !important;
+}
+
+.pb-2 {
+  padding-bottom: 2px !important;
+}
+.pb-4 {
+  padding-bottom: 4px !important;
+}
+.pb-6 {
+  padding-bottom: 6px !important;
+}
+.pb-8 {
+  padding-bottom: 8px !important;
+}
+.pb-10 {
+  padding-bottom: 10px !important;
+}
+.pb-12 {
+  padding-bottom: 12px !important;
+}
+.pb-14 {
+  padding-bottom: 14px !important;
+}
+.pb-16 {
+  padding-bottom: 16px !important;
+}
+.pb-18 {
+  padding-bottom: 18px !important;
+}
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+.pb-22 {
+  padding-bottom: 22px !important;
+}
+.pb-24 {
+  padding-bottom: 24px !important;
+}
+.pb-26 {
+  padding-bottom: 26px !important;
+}
+.pb-28 {
+  padding-bottom: 28px !important;
+}
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+.pb-32 {
+  padding-bottom: 32px !important;
+}
+.pb-34 {
+  padding-bottom: 34px !important;
+}
+.pb-36 {
+  padding-bottom: 36px !important;
+}
+.pb-38 {
+  padding-bottom: 38px !important;
+}
+.pb-40 {
+  padding-bottom: 40px !important;
+}
+
+.pl-2 {
+  padding-left: 2px !important;
+}
+.pl-4 {
+  padding-left: 4px !important;
+}
+.pl-6 {
+  padding-left: 6px !important;
+}
+.pl-8 {
+  padding-left: 8px !important;
+}
+.pl-10 {
+  padding-left: 10px !important;
+}
+.pl-12 {
+  padding-left: 12px !important;
+}
+.pl-14 {
+  padding-left: 14px !important;
+}
+.pl-16 {
+  padding-left: 16px !important;
+}
+.pl-18 {
+  padding-left: 18px !important;
+}
+.pl-20 {
+  padding-left: 20px !important;
+}
+.pl-22 {
+  padding-left: 22px !important;
+}
+.pl-24 {
+  padding-left: 24px !important;
+}
+.pl-26 {
+  padding-left: 26px !important;
+}
+.pl-28 {
+  padding-left: 28px !important;
+}
+.pl-30 {
+  padding-left: 30px !important;
+}
+.pl-32 {
+  padding-left: 32px !important;
+}
+.pl-34 {
+  padding-left: 34px !important;
+}
+.pl-36 {
+  padding-left: 36px !important;
+}
+.pl-38 {
+  padding-left: 38px !important;
+}
+.pl-40 {
+  padding-left: 40px !important;
+}
+/* ==========================================================
+================= 我是自定义样式分界线   ===================
+========================================================== */
+
+/* 文本颜色，可根据项目修改 */
+.text-muted {
+  color: #777;
+}
+.text-primary {
+  color: #337ab7;
+}
+.text-success {
+  color: #3c763d;
+}
+.text-info {
+  color: #31708f;
+}
+.text-warning {
+  color: #8a6d3b;
+}
+.text-danger {
+  color: #a94442;
+}
+.text-white {
+  color: #fff;
+}
+/* 背景色系列，可根据项目修改 */
+.bg-primary {
+  background-color: #337ab7;
+}
+.bg-success {
+  background-color: #dff0d8;
+}
+.bg-info {
+  background-color: #d9edf7;
+}
+.bg-warning {
+  background-color: #fcf8e3;
+}
+.bg-danger {
+  background-color: #f2dede;
+}
