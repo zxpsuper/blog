@@ -3,10 +3,7 @@
 ### 框架笔记
 
 - [小程序小笔记](./%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AC%94%E8%AE%B0.md)
-
 - [vue 小笔记](https://github.com/zxpsuper/note/blob/master/vue/vue%E5%B0%8F%E7%AC%94%E8%AE%B0.md)
-
-- [react 笔记](https://github.com/zxpsuper/note/blob/master/react/react%E7%AC%94%E8%AE%B0.md)
 
 ### Javascript
 
@@ -22,8 +19,10 @@
 
 ### 开发规范
 
-- [Vue 开发规范](./Vue开发规范.md)
-- [前端开发规范](./前端开发规范.md)
+- [Vue 开发规范](./work/Vue开发规范.md)
+- [前端开发规范](./work/前端开发规范.md)
+- [前后端接口规范](./work/前后端接口规范.md)
+- [CSS 公共样式库说明](./work/CSS公共样式库.md) + [CSS 公共样式](./work/index.css)
 
 ---
 
