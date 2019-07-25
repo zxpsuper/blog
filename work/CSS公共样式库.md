@@ -1,10 +1,10 @@
 # CSS 公共样式库
 
-- 作者：郑晓鹏
+-   作者：郑晓鹏
 
-- 版本：1.0.0
+-   版本：1.0.0
 
-- 最后更新时间：2018/11/08
+-   最后更新时间：2018/11/08
 
 ## 样式库结构
 
@@ -71,9 +71,9 @@
 
 #### 6. 盒子模型系列
 
-本文库设置了 margin 与 padding, 包含 margin-left, margin-right, margin-top, margin-bottom, padding-left, padding-right, padding-top, padding-bottom.
+本文库设置了 margin 与 padding, 包含 `margin-left, margin-right, margin-top, margin-bottom, padding-left, padding-right, padding-top, padding-bottom`.
 
-像素值从 2px 至 40px， 均为偶数像素， 使用方法：`mt-10, mb-10, ml-10, mr10, pr-10...`
+像素值从 `2px` 至 `40px`， 均为偶数像素， 使用方法：`mt-10, mb-10, ml-10, mr10, pr-10...`
 
 ### 自定义颜色样式
 
@@ -86,6 +86,6 @@
 
 ## 版本介绍
 
-- 1.0.0
+-   1.0.0
 
 创建公共样式基础库
