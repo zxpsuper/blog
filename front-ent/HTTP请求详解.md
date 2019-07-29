@@ -1,14 +1,14 @@
 ### `HTTP` 请求详解
 
-`HTTP` 通信机制是在一次完整的 HTTP 通信过程中，`Web` 浏览器与 `Web` 服务器之间将完成下列 `7` 个步骤：
+`HTTP` 通信机制是在一次完整的 `HTTP` 通信过程中，`Web` 浏览器与 `Web` 服务器之间将完成下列 `7` 个步骤：
 
-> 1.  建立 TCP 连接
-> 2.  Web 浏览器向 Web 服务器发送请求命令
-> 3.  Web 浏览器发送请求头信息
-> 4.  Web 服务器应答
-> 5.  Web 服务器发送应答头信息
-> 6.  Web 服务器向浏览器发送数据
-> 7.  Web 服务器关闭 TCP 连接
+> 1.  建立 `TCP` 连接
+> 2.  `Web` 浏览器向 `Web` 服务器发送请求命令
+> 3.  `Web` 浏览器发送请求头信息
+> 4.  `Web` 服务器应答
+> 5.  `Web` 服务器发送应答头信息
+> 6.  `Web` 服务器向浏览器发送数据
+> 7.  `Web` 服务器关闭 `TCP` 连接
 
 `TCP` 连接在发送后将仍然保持打开状态，于是，浏览器可以继续通过相同的连接发送请求。保持连接节省了为每个请求建立新连接所需的时间，还节约了网络带宽。
 
@@ -24,14 +24,16 @@
 
 下面是一个 `HTTP` 请求的例子：
 
-> GET/sample.jspHTTP/1.1
-> Accept:image/gif.image/jpeg,_/_
-> Accept-Language:zh-cn
-> Connection:Keep-Alive
-> Host:localhost
-> User-Agent:Mozila/4.0(compatible;MSIE5.01;Window NT5.0)
-> Accept-Encoding:gzip,deflate
-> username=jinqiao&password=1234
+```
+ GET/sample.jspHTTP/1.1
+ Accept:image/gif.image/jpeg,_/_
+ Accept-Language:zh-cn
+ Connection:Keep-Alive
+ Host:localhost
+ User-Agent:Mozila/4.0(compatible;MSIE5.01;Window NT5.0)
+ Accept-Encoding:gzip,deflate
+ username=jinqiao&password=1234
+```
 
 1. 请求方法 `URI协议/版本`
 
@@ -49,12 +51,14 @@
 
     请求头包含许多有关的客户端环境和请求正文的有用信息。例如，请求头可以声明浏览器所用的语言，请求正文的长度等。
 
-    > Accept:image/gif.image/jpeg._/_
-    > Accept-Language:zh-cn
-    > Connection:Keep-Alive
-    > Host:localhost
-    > User-Agent:Mozila/4.0(compatible:MSIE5.01:Windows NT5.0)
-    > Accept-Encoding:gzip,deflate.
+```
+ Accept:image/gif.image/jpeg._/_
+ Accept-Language:zh-cn
+ Connection:Keep-Alive
+ Host:localhost
+ User-Agent:Mozila/4.0(compatible:MSIE5.01:Windows NT5.0)
+ Accept-Encoding:gzip,deflate.
+```
 
 3. 请求正文
 
@@ -75,13 +79,15 @@
 
     下面是一个 `HTTP` 响应的例子：
 
-    > HTTP/1.1 200 OK
-    >
-    > Server: Apache Tomcat/5.0.12
-    >
-    > Date: Mon,6Oct2003 13:23:42 GMT
-    >
-    > Content-Length: 112
+```
+ HTTP/1.1 200 OK
+
+ Server: Apache Tomcat/5.0.12
+
+ Date: Mon,6Oct2003 13:23:42 GMT
+
+ Content-Length: 112
+```
 
 ```html
 <html>
@@ -101,10 +107,12 @@
 
     响应头也和请求头一样包含许多有用的信息，例如服务器类型、日期时间、内容类型和长度等：
 
-    > Server:Apache Tomcat/5.0.12
-    > Date:Mon,6Oct2003 13:13:33 GMT
-    > Content-Type:text/html
-    > Last-Moified:Mon,6 Oct 2003 13:23:42 GMT
-    > Content-Length:112
+```
+ Server:Apache Tomcat/5.0.12
+ Date:Mon,6Oct2003 13:13:33 GMT
+ Content-Type:text/html
+ Last-Moified:Mon,6 Oct 2003 13:23:42 GMT
+ Content-Length:112
+```
 
 响应正文响应正文就是服务器返回的 `HTML` 页面

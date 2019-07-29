@@ -1,13 +1,18 @@
-# 小皮咖 Blog
+# 小皮咖的博客
 
-### 开发规范
+## 专栏
+
+-   [掘金主页](https://juejin.im/user/5af17df4518825672a02e1f5/posts)
+-   [segmentfault 主页](https://segmentfault.com/u/suporka)
+
+## 开发规范
 
 -   [Vue 开发规范](./work/Vue开发规范.md)
 -   [前端开发规范](./work/前端开发规范.md)
 -   [前后端接口规范](./work/前后端接口规范.md)
 -   [CSS 公共样式库说明](./work/CSS公共样式库.md) + [CSS 公共样式](./work/index.css)
 
-### Javascript
+## Javascript
 
 -   [二叉树](./js/BinaryTree.js)
 -   [一个函数](./js/一个函数.md)
@@ -17,7 +22,11 @@
 -   [继承的几种方式](./js/继承的几种方式.md)
 -   [This 的几种使用场景](./js/this的几种使用场景.md)
 
-### 前端杂知识
+## 设计模式
+
+-   [单例模式](./设计模式/单例模式.md)
+
+## 前端杂知识
 
 -   [HTTP 请求详解](./HTTP请求详解.md)
 -   [前端 SEO](./前端seo.md)
