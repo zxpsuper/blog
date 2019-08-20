@@ -1,16 +1,31 @@
+# 手动实现一个 EvenEmitter
+
+## 原理
+
+`EvenEmitter` 的原理便是发布订阅者模式。
+
+-   用户订阅一个事件并将执行函数交给 `EvenEmiter`, `EvenEmitter`注册此事件类型，并将执行函数存入该类型事件的数组中。
+
+-   一旦用户发布事件及参数，`EvenEmitter`便会找到该类型事件的数组，并逐一执行数组内的函数
+
+接下来我们来实现一个简单版和一个高级版。
+
+## 简单版本
+
+```js
 // 发布订阅者模式
-var Event = function() {
+var EvenEmitter = function() {
     this.obj = {};
 };
 
-Event.prototype.on = function(eventType, fn) {
+EvenEmitter.prototype.on = function(eventType, fn) {
     if (!this.obj[eventType]) {
         this.obj[eventType] = [];
     }
     this.obj[eventType].push(fn);
 };
 
-Event.prototype.emit = function(...arguments) {
+EvenEmitter.prototype.emit = function(...arguments) {
     // arguments是类数组对象，不可直接使用数组方法，下面使arguments使用shift方法
     var eventType = Array.prototype.shift.call(arguments);
 
@@ -21,7 +36,7 @@ Event.prototype.emit = function(...arguments) {
     }
 };
 
-var ev = new Event();
+var ev = new EvenEmitter();
 
 ev.on('click', function(a) {
     // 订阅函数
@@ -29,7 +44,11 @@ ev.on('click', function(a) {
 });
 
 ev.emit('click', 888); // 发布函数
+```
 
+## 高级版本
+
+```js
 // 高级版本，实现remove once等功能
 function EventEmitter() {
     this._events = Object.create(null);
@@ -103,3 +122,4 @@ emitter.emit('click');
 
 emitter.removeListener('click', listener);
 emitter.emit('click');
+```
