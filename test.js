@@ -1,45 +1,47 @@
-function selfCopy(result, curList, split) {
-    let tempList = [];
-    for (let itemOfCurList of curList) {
-        for (let itemOfResult of result) {
-            tempList.push({
-                name: itemOfResult.name + split + itemOfCurList.name,
-            }); //因为这里是字符串集合相称，那么其实就是字符串相加。
-        }
+!(function(e) {
+    function t(a) {
+        if (i[a]) return i[a].exports;
+        var n = (i[a] = { exports: {}, id: a, loaded: !1 });
+        return (
+            e[a].call(n.exports, n, n.exports, t), (n.loaded = !0), n.exports
+        );
     }
-    result.length = 0;
-    for (let tempStr of tempList) {
-        result.push(tempStr);
-    }
-}
-function descartes(dimValues, split) {
-    let result = [];
-    for (let i = 0; i < dimValues.length; i++) {
-        let curList = dimValues[i];
-
-        if (0 == i) {
-            //如果是首个集合，直接放输入到结果集中
-            for (let tempStr of curList) {
-                result.push(tempStr);
-            }
-            continue;
-        }
-        selfCopy(result, curList, split); //将前一个集合的乘积 result，自我复制 curListCount 份，并将当前集合的元素追加到上边
-    }
-    return result;
-}
-
-let dimValue = [
-    [{ name: 'super' }, { name: 'chil' }],
-    [{ name: '18' }, { name: '24' }, { name: '32' }],
-    [{ name: '华农' }, { name: '华师' }, { name: '华工' }],
-];
-
-// let result = descartes(dimValue, ',');
-let result = cartesian(dimValue, ',');
-
-console.log(result);
-// for (let temp of result) {
-//     //    System.out.println(temp);
-//     console.log(temp);
-// }
+    var i = {};
+    return (t.m = e), (t.c = i), (t.p = ''), t(0);
+})([
+    function(e, t) {
+        'use strict';
+        Object.defineProperty(t, '__esModule', { value: !0 });
+        var i = window;
+        (t['default'] = i.flex = function(e, t) {
+            var a = e || 100,
+                n = t || 1,
+                r = i.document,
+                o = navigator.userAgent,
+                d = o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),
+                l = o.match(/U3\/((\d+|\.){5,})/i),
+                c = l && parseInt(l[1].split('.').join(''), 10) >= 80,
+                p = navigator.appVersion.match(/(iphone|ipad|ipod)/gi),
+                s = i.devicePixelRatio || 1;
+            p || (d && d[1] > 534) || c || (s = 1);
+            var u = 1 / s,
+                m = r.querySelector('meta[name="viewport"]');
+            m ||
+                ((m = r.createElement('meta')),
+                m.setAttribute('name', 'viewport'),
+                r.head.appendChild(m)),
+                m.setAttribute(
+                    'content',
+                    'width=device-width,user-scalable=no,initial-scale=' +
+                        u +
+                        ',maximum-scale=' +
+                        u +
+                        ',minimum-scale=' +
+                        u
+                ),
+                (r.documentElement.style.fontSize = (a / 2) * s * n + 'px');
+        }),
+            (e.exports = t['default']);
+    },
+]);
+flex(100, 1);
