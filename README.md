@@ -1,44 +1,51 @@
 # :house_with_garden: 小皮咖的博客
 
--   :pencil: 专栏
+-   个人专栏
 
     -   [:rainbow: 掘金主页](https://juejin.im/user/5af17df4518825672a02e1f5/posts)
     -   [:rainbow: segmentfault 主页](https://segmentfault.com/u/suporka)
 
--   :pencil: 开发规范
+-   开发规范
 
     -   [Vue 开发规范](./work/Vue开发规范.md)
     -   [前端开发规范](./work/前端开发规范.md)
     -   [前后端接口规范](./work/前后端接口规范.md)
     -   [CSS 公共样式库说明](./work/CSS公共样式库.md) + [CSS 公共样式](./work/index.css)
 
--   :pencil: 设计模式
+-   设计模式
 
+    -   [前言](./设计模式/前言.md)
     -   [单例模式](./设计模式/单例模式.md)
+    -   [发布订阅者模式](./设计模式/发布订阅者模式.md)
+    -   [工厂模式](./设计模式/工厂模式.md)
+    -   [观察者模式](./设计模式/观察者模式.md)
+    -   [适配器模式](./设计模式/适配器模式.md)
+    -   [装饰者模式](./设计模式/装饰者模式.md)
+    -   [职责链模式](./设计模式/职责链模式.md)
 
--   :pencil: 性能优化
+-   性能优化
 
     -   [聊聊前端性能优化的几个出发点](./front-ent/前端性能优化.md)
 
--   :pencil: HTTP 请求
+-   HTTP 请求
 
     -   [HTTP 请求详解](./front-ent/HTTP请求详解.md)
 
--   :pencil: 手写函数系列
+-   手写函数系列
 
     -   [手动实现一个 EvenEmitter](./js/手动实现一个EventEmitter.md)
     -   [手动实现 call、apply、bind](./js/手动实现call_apply_bind.md)
     -   [手动实现 promise](./js/手动实现promise.md)
 
--   :pencil: 浏览器相关
+-   浏览器相关
 
     -   [前端中各种宽高](./front-ent/前端中各种宽高.md)
     -   [浏览器页面事件的几个位置属性](./front-ent/事件的几个位置属性.md)
     -   [前端 SEO](./front-ent/前端seo.md)
 
--   :pencil: Javascript 进阶
+-   Javascript 进阶
 
-    -   [函数的防抖与节流](./js/函数的防抖与节流.md)
+    -   [函数的防抖与节流](./js/函数防抖与节流.md)
     -   [递归实现深拷贝](./js/递归实现深拷贝.md)
     -   [数组的去重与扁平化](./js/数组的去重与扁平化.md)
     -   [函数柯里化](./js/函数柯里化.md)
@@ -49,9 +56,9 @@
     -   [时间转换](./js/时间转换.md)
     -   [正则表达式](./js/正则表达式.md)
 
-## :pencil: 前端安全
+-   前端安全
 
--   [前端网络安全](./front-ent/前端网络安全.md)
+    -   [前端网络安全](./front-ent/前端网络安全.md)
 
 ---
 
