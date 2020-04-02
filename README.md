@@ -59,9 +59,14 @@
     -   [时间转换](./js/时间转换.md)
     -   [正则表达式](./js/正则表达式.md)
 
--   前端安全
+-   canvas 相关
 
-    -   [前端网络安全](./front-ent/前端网络安全.md)
+    -   [二维码的生成与扫码识别](https://juejin.im/post/5d00b3626fb9a07ed74076a9)
+    -   [写一个生成带 logo 的二维码 npm 插件](https://juejin.im/post/5d1c461f6fb9a07f070e4768)
+    -   [ts + canvas 重写”辨色“小游戏](https://juejin.im/post/5d22af2b6fb9a07ea7133361)
+    -   [实现一个“刮刮乐”游戏](https://juejin.im/post/5d664786f265da03ee6a694f)
+    -   [实现图片滤镜效果](https://juejin.im/post/5dfb15b96fb9a016164362b2)
+    -   [实现图片压缩功能](https://juejin.im/post/5e4e75c8518825493c7b52a3)
 
 -   其他
 
@@ -69,6 +74,7 @@
     -   聊天室输入 emoji 表情并展示
     -   身份证的那些事
     -   实现一个自定义 vue 滚动条插件
+    -   什么是哈夫曼编码？
 
 ---
 
