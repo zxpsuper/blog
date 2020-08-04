@@ -52,7 +52,7 @@ function decode(input) {
         enc2,
         enc3,
         enc4;
-    
+
     while (i < input.length) {
         enc1 = _keyStr.indexOf(input.charAt(i++));
         enc2 = _keyStr.indexOf(input.charAt(i++));
@@ -79,30 +79,30 @@ function decode(input) {
 }
 
 function encodeTransform(input) {
-    let output = '';
-    for (var n = 0; n < input.length; n++) {
-        var c = input.charCodeAt(n); // 返回指定位置的字符的 Unicode 编码。这个返回值是 0 - 65535 之间的整数。
-        if (c < 128) {
-            // 0-7位
-            // 如果小于128 即是 ASCII 码，直接返回该 ASCII 码
-            output += String.fromCharCode(c);
-        } else if (c > 127 && c < 2048) {
-            //  8 - 11 位
-            // 这里是将二进制去除后六位，然后在开头加'11'补至八位二进制，变成一个小于255的数字
-            output += String.fromCharCode((c >> 6) | 192);
-            // 这里是取二进制后六位, 然后在开头加'1'补至八位二进制，变成一个小于255的数字
-            output += String.fromCharCode((c & 63) | 128);
-        } else {
-            // 12-16位, 因为unicode最大位数为16
-            // 这里是将二进制去除后12位，然后在开头加'111'补至八位二进制，变成一个小于255的数字
-            output += String.fromCharCode((c >> 12) | 224);
-            // 这里取 7 - 12 位，然后在开头加'1'补至八位二进制，变成一个小于255的数字
-            output += String.fromCharCode(((c >> 6) & 63) | 128);
-            // 这里取 0 - 6 位，然后在开头加'1'补至八位二进制，变成一个小于255的数字
-            output += String.fromCharCode((c & 63) | 128);
-        }
-    }
-    return output;
+  let output = '';
+  for (var n = 0; n < input.length; n++) {
+      var c = input.charCodeAt(n); // 返回指定位置的字符的 Unicode 编码。这个返回值是 0 - 65535 之间的整数。
+      if (c < 128) {
+          // 0-7位
+          // 如果小于128 即是 ASCII 码，直接返回该 ASCII 码
+          output += String.fromCharCode(c);
+      } else if (c > 127 && c < 2048) {
+          //  8 - 11 位
+          // 这里是将二进制去除后六位，然后在开头加'11'补至八位二进制，变成一个大于等于192小于224的数字
+          output += String.fromCharCode((c >> 6) | 192);
+          // 这里是取二进制后六位, 然后在开头加'1'补至八位二进制，变成一个小于255大于等于128的数字
+          output += String.fromCharCode((c & 63) | 128);
+      } else {
+          // 12-16位, 因为unicode最大位数为16
+          // 这里是将二进制去除后12位，然后在开头加'111'补至八位二进制，变成一个大于等于224小于255的数字
+          output += String.fromCharCode((c >> 12) | 224);
+          // 这里取 7 - 12 位，然后在开头加'1'补至八位二进制，变成一个小于192大于等于128的数字
+          output += String.fromCharCode(((c >> 6) & 63) | 128);
+          // 这里取 0 - 6 位，然后在开头加'1'补至八位二进制，变成一个小于192大于等于128的数字
+          output += String.fromCharCode((c & 63) | 128);
+      }
+  }
+  return output;
 }
 
 function decodeTransform(input) {
@@ -130,7 +130,7 @@ function decodeTransform(input) {
             i += 3;
         }
     }
-    return output
+    return output;
 }
 console.log(encode('你好'));
-console.log(decode('5L2g5aW9'))
+console.log(decode('5L2g5aW9'));
