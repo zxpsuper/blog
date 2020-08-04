@@ -73,6 +73,7 @@
 -   [x] [正则表达式](./js/正则表达式.md)
 -   [x] [AST 抽象语法树](https://github.com/zxpsuper/daily-question/blob/master/front_end/javascript/AST%E6%8A%BD%E8%B1%A1%E8%AF%AD%E6%B3%95%E6%A0%91.md)
 -   [x] [为什么 0.1 + 0.2 !== 0.3 ?](https://github.com/zxpsuper/daily-question/blob/master/front_end/javascript/IEEE-754%E7%B2%BE%E5%BA%A6%E9%97%AE%E9%A2%98.md)
+-   [x] [Base64的编码解码](./js/Base64的编码解码.md)
 
 ## 🎭 canvas 相关 [🔝](#blog)
 
