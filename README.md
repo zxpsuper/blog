@@ -2,7 +2,7 @@
 
 |            Ⅰ            |            Ⅱ            |            Ⅲ            |          Ⅳ           |              Ⅴ              |           VI            |               VII                |           VIII           |       IX        |         XI          |         XII         |
 | :---------------------: | :---------------------: | :---------------------: | :------------------: | :-------------------------: | :---------------------: | :------------------------------: | :----------------------: | :-------------: | :-----------------: | :-----------------: |
-| [开发规范](#-开发规范-) | [设计模式](#-设计模式-) | [性能优化](#-性能优化-) | [HTTP](#-http-请求-) | [手写函数](#-手写函数系列-) | [浏览器](#-浏览器相关-) | [Javascript](#-javascript-进阶-) | [Canvas](#-canvas-相关-) | [其他](#-其他-) | [读书](#-读书列表-) | [作者](#-关于作者-) |
+| [开发规范](#-开发规范-) | [设计模式](#-设计模式-) | [性能优化](#-性能优化-) | [HTTP](#-http-请求-) | -- | [浏览器](#-浏览器相关-) | [Javascript](#-javascript-进阶-) | [Canvas](#-canvas-相关-) | [其他](#-其他-) | [读书](#-读书列表-) | [作者](#-关于作者-) |
 
 <div align='center'>
 
@@ -23,14 +23,14 @@
 
 ## 👓 开发规范 [🔝](#blog)
 
--   [x] [vue 开发规范](./work/Vue开发规范.md) [x] [前端开发规范](./work/前端开发规范.md)
+-   [x] [vue 开发规范](./work/Vue开发规范.md) - [前端开发规范](./work/前端开发规范.md)
 -   [x] [前后端接口规范](./work/前后端接口规范.md)
 -   [x] [css 公共样式库说明](./work/CSS公共样式库.md) + [CSS 公共样式](./work/index.css)
 
 ## 🎨 设计模式 [🔝](#blog)
 
--   [x] [前言](./设计模式/前言.md) [x][单例模式](./设计模式/单例模式.md) [x][发布订阅者模式](./设计模式/发布订阅者模式.md) [x][工厂模式](./设计模式/工厂模式.md)
--   [x] [适配器模式](./设计模式/适配器模式.md) [x][装饰者模式](./设计模式/装饰者模式.md) [x][职责链模式](./设计模式/职责链模式.md) [x][观察者模式](./设计模式/观察者模式.md)
+-   [x] [前言](./设计模式/前言.md) - [单例模式](./设计模式/单例模式.md) - [发布订阅者模式](./设计模式/发布订阅者模式.md) - [工厂模式](./设计模式/工厂模式.md)
+-   [x] [适配器模式](./设计模式/适配器模式.md) - [装饰者模式](./设计模式/装饰者模式.md) - [职责链模式](./设计模式/职责链模式.md) - [观察者模式](./设计模式/观察者模式.md)
 
 ## ⚡ 性能优化 [🔝](#blog)
 
@@ -43,13 +43,6 @@
 -   [x] [http2 与 http1.1 的区别](https://github.com/zxpsuper/daily-question/blob/master/front_end/%E6%B5%8F%E8%A7%88%E5%99%A8/HTTP2%E4%B8%8EHTTP1.1%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 -   [ ] HTTP3.0 详解
 
-## 🙋 手写函数系列 [🔝](#blog)
-
--   [x] [手动实现 call、apply、bind](./js/makeFunction/手动实现call_apply_bind.md)
--   [x] [手动实现一个 evenemitter](./js/makeFunction/手动实现一个EventEmitter.md)
--   [x] [手动实现一个 new 函数](./js/makeFunction/手动实现一个new函数.md)
--   [x] [手动实现 promise](./js/makeFunction/手动实现promise.md)
-
 ## 💻 浏览器相关 [🔝](#blog)
 
 -   [x] [前端中各种宽高](./front-ent/前端中各种宽高.md)
@@ -58,9 +51,7 @@
 
 ## 📈Javascript 进阶 [🔝](#blog)
 
--   [x] [「面试基础小册」数据类型及其延伸](./js/数据类型及其延伸.md)
--   [ ] 「面试基础小册」继承与原型链
--   [ ] 「面试基础小册」ES6 的新特性与考点
+### Javascript 基础
 -   [x] [函数的防抖与节流](./js/函数防抖与节流.md)
 -   [x] [聊聊深浅拷贝](./js/聊聊深浅拷贝.md)
 -   [x] [数组的去重与扁平化](./js/数组的去重与扁平化.md)
@@ -74,6 +65,12 @@
 -   [x] [AST 抽象语法树](https://github.com/zxpsuper/daily-question/blob/master/front_end/javascript/AST%E6%8A%BD%E8%B1%A1%E8%AF%AD%E6%B3%95%E6%A0%91.md)
 -   [x] [为什么 0.1 + 0.2 !== 0.3 ?](https://github.com/zxpsuper/daily-question/blob/master/front_end/javascript/IEEE-754%E7%B2%BE%E5%BA%A6%E9%97%AE%E9%A2%98.md)
 -   [x] [Base64的编码解码](./js/Base64的编码解码.md)
+-   [x] 手写函数系列[【call、apply、bind】](./js/makeFunction/手动实现call_apply_bind.md)[【evenemitter】](./js/makeFunction/手动实现一个EventEmitter.md)[【New】](./js/makeFunction/手动实现一个new函数.md)[【Promise】](./js/makeFunction/手动实现promise.md)
+### 面试相关
+-   [x] [「面试基础小册」数据类型及其延伸](./js/数据类型及其延伸.md)
+-   [ ] 「面试基础小册」继承与原型链
+-   [ ] 「面试基础小册」ES6 的新特性与考点
+
 
 ## 🎭 canvas 相关 [🔝](#blog)
 
