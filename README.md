@@ -47,25 +47,20 @@
 
 -   [x] [前端中各种宽高](./front-ent/前端中各种宽高.md)
 -   [x] [浏览器页面事件的几个位置属性](./front-ent/事件的几个位置属性.md)
--   [x] [前端 seo](./front-ent/前端SEO.md)
+-   [x] [前端 SEO](./front-ent/前端SEO.md)
 
 ## 📈Javascript 进阶 [🔝](#blog)
 
 ### Javascript 基础
--   [x] [函数的防抖与节流](./js/函数防抖与节流.md)
--   [x] [聊聊深浅拷贝](./js/聊聊深浅拷贝.md)
--   [x] [数组的去重与扁平化](./js/数组的去重与扁平化.md)
--   [x] [函数柯里化](./js/函数柯里化.md)
--   [x] [继承的几种方式](./js/继承的几种方式.md)
+-   [x] 手写函数系列[【call、apply、bind】](./js/makeFunction/手动实现call_apply_bind.md)[【evenemitter】](./js/makeFunction/手动实现一个EventEmitter.md)[【New】](./js/makeFunction/手动实现一个new函数.md)[【Promise】](./js/makeFunction/手动实现promise.md)
+-   [x] [20+ 道 Javascript 算法题目分享🔥](https://github.com/zxpsuper/daily-question/tree/master/algorithm) -- `推荐: ⭐⭐⭐⭐⭐`
+-   [x] [防抖与节流](./js/函数防抖与节流.md)、[深浅拷贝](./js/聊聊深浅拷贝.md)、 [数组的去重与扁平化](./js/数组的去重与扁平化.md)、[柯里化](./js/函数柯里化.md)、[继承](./js/继承的几种方式.md)
 -   [x] [This 的几种使用场景](./js/this的几种使用场景.md)
--   [x] [二叉树](./js/BinaryTree.js)
--   [x] [一个函数](./js/一个函数.md)
--   [x] [时间转换](./js/时间转换.md)
 -   [x] [正则表达式](./js/正则表达式.md)
 -   [x] [AST 抽象语法树](https://github.com/zxpsuper/daily-question/blob/master/front_end/javascript/AST%E6%8A%BD%E8%B1%A1%E8%AF%AD%E6%B3%95%E6%A0%91.md)
 -   [x] [为什么 0.1 + 0.2 !== 0.3 ?](https://github.com/zxpsuper/daily-question/blob/master/front_end/javascript/IEEE-754%E7%B2%BE%E5%BA%A6%E9%97%AE%E9%A2%98.md)
 -   [x] [Base64的编码解码](./js/Base64的编码解码.md)
--   [x] 手写函数系列[【call、apply、bind】](./js/makeFunction/手动实现call_apply_bind.md)[【evenemitter】](./js/makeFunction/手动实现一个EventEmitter.md)[【New】](./js/makeFunction/手动实现一个new函数.md)[【Promise】](./js/makeFunction/手动实现promise.md)
+
 ### 面试相关
 -   [x] [「面试基础小册」数据类型及其延伸](./js/数据类型及其延伸.md)
 -   [ ] 「面试基础小册」继承与原型链
