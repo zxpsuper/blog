@@ -1,5 +1,8 @@
 {
   "main": "./test.js",
+  "scripts": {
+    "commit": "node ./commit/git-commit.js"
+  },
   "devDependencies": {
     "inquirer": "^6.5.0",
     "shelljs": "^0.8.3"
